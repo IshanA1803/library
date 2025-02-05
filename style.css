@@ -22,11 +22,12 @@ h1{
     align-items: center; /*This made the logo and text to align vertically.*/
     gap: 0.2rem;
     letter-spacing: 0.5rem;
+    text-shadow: 0.33rem 0.33rem 0.63rem rgb(1, 1, 1);
 }
 header img{
     height: 1em; /*This made the SVG's size proportional to the text*/
 }
-header button{
+header>button{
     align-self: center;
     font-size: 1.2rem;
     padding: 0.6rem;
@@ -64,4 +65,37 @@ footer img{
 }
 footer img:hover{
     transform: rotate(180deg);
+}
+
+/* Styling content section */
+.content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 0px 1.2rem;
+    gap: 2rem;
+}
+/* Styling the info section */
+.info{
+    background-color: rgba(150, 149, 149, 0.289);
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 6px 6px 8px;
+    border-radius:0% 15% 15% 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.5rem;
+}
+p{
+    margin:4% 10% 4% 2%; /* To centre the Log text, couldn't do with text align alone*/
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2%; /* To push down the underline */
+    border-bottom: 2px solid black;
+}
+.info>div{
+    margin: 0px 5%;
+    background-color: rgba(240, 248, 255, 0.172);
+    box-shadow: -4px 4px 6px;
 }
