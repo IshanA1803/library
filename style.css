@@ -60,4 +60,8 @@ footer{
 }
 footer img{
     height: 2rem;
+    transition: transform 0.5s;
+}
+footer img:hover{
+    transform: rotate(180deg);
 }
