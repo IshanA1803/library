@@ -5,6 +5,7 @@
 }
 body{
     background-image: linear-gradient(to right,rgb(232, 236, 235),rgb(81, 80, 80));
+    height: 100vh;
 }
 
 /* Styling the header section of the webpage. */
@@ -22,11 +23,10 @@ h1{
     gap: 0.2rem;
     letter-spacing: 0.5rem;
 }
-img{
+header img{
     height: 1em; /*This made the SVG's size proportional to the text*/
 }
 header button{
-    display: inline-block;
     align-self: center;
     font-size: 1.2rem;
     padding: 0.6rem;
@@ -37,7 +37,7 @@ header button{
     background-color: black;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.37s;
+    transition: all 0.37s; /*For button transition effects*/
 }
 header>button:hover{
     border-color: white;
@@ -46,4 +46,18 @@ header>button:active{
     border-color: black;
     color: black;
     background-color: white;
+}
+
+/* Styling the footer section */
+footer{
+    padding: 0.6%;
+    background-color: rgba(0, 0, 0, 0.496);
+    color: white;
+    display: flex; 
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center; /*To align the GitHub logo with the text*/
+}
+footer img{
+    height: 2rem;
 }
