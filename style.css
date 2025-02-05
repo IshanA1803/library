@@ -6,3 +6,19 @@
 body{
     background-image: linear-gradient(to right,rgba(94, 154, 124, 0.823),rgb(81, 80, 80));
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    background-color: rgba(0, 0, 0, 0.204);
+}
+h1{
+    display: flex;
+    font-size: 5rem;
+    margin-left: 2%;
+    align-items: center;
+    gap: 0.2em;
+}
+img{
+    height: 1em;
+}
