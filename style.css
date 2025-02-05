@@ -4,21 +4,24 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right,rgba(94, 154, 124, 0.823),rgb(81, 80, 80));
+    background-image: linear-gradient(to right,rgb(232, 236, 235),rgb(81, 80, 80));
 }
+
+/* Styling the header section of the webpage. */
 header{
     display: flex;
     justify-content: space-between;
     padding: 0.5%;
-    background-color: rgba(0, 0, 0, 0.204);
+    background-color: rgba(0, 0, 0, 0.188);
 }
 h1{
-    display: flex;
-    font-size: 5rem;
+    display: flex; /*Was necessary to make the logo appear next to the text.*/
+    font-size: 5.6rem;
     margin-left: 2%;
-    align-items: center;
-    gap: 0.2em;
+    align-items: center; /*This made the logo and text to align vertically.*/
+    gap: 0.2rem;
+    letter-spacing: 0.5rem;
 }
 img{
-    height: 1em;
+    height: 1em; /*This made the SVG's size proportional to the text*/
 }
