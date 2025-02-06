@@ -99,3 +99,31 @@ p{
     background-color: rgba(240, 248, 255, 0.172);
     box-shadow: -4px 4px 6px;
 }
+
+/* Styling the books section */
+.books{
+    display: grid;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin: 1rem;
+    gap: 1rem;
+}
+
+/* Styling the Book Adder */
+#add{
+    max-height: 10rem; /*Had to add these constraints so images's height can be constrained*/
+    max-width: 10rem;
+}
+#add>img{
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+#add>img:hover{
+    transform: scale(1.06);
+    opacity: 0.75;
+}
+#add>img:active{
+    transform: scale(1);
+    opacity: 1;
+}
